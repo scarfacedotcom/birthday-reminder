@@ -1,5 +1,7 @@
 body {
   background-color: orange;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  height: 100vh;
 }
 
 main{
@@ -7,16 +9,52 @@ main{
   padding: 10px;
   width: 450px;
   margin: 20px auto;
+  border-radius: 20px;
 }
 
 button {
   background-color: orange;
   color: white;
   padding: 8px 10px;
-  border-radius: 2px;
+  border-radius: 20px;
   border: none;
-  width: 95%;
+  width: 55%;
   margin: 0 auto;
   display: block;
+  cursor: pointer;
+  letter-spacing: 2px;
+  margin-top: 40px;
+  transform: opacity 0.2s;
 }
 
+button:hover {
+  background-color: rgb(237, 159, 16);
+  color: black;
+}
+
+img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.profile {
+  display: flex;
+}
+
+.nameAge {
+  margin-left: 40px;
+  margin-top: 30px;
+}
+
+h1 {
+  margin-left: 90px;
+}
+
+h3, h4{
+  padding: 2px;
+  letter-spacing: 2px;
+  line-height: 5px;
+}

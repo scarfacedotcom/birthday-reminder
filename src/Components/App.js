@@ -8,7 +8,7 @@ const App = () => {
   const [people, setPeople] = useState(data)
   return (
     <main>
-      <h1> {people.length} birthdays today</h1>
+      <h1> {people.length} Birthdays Today</h1>
         {people.map((person) => {
           const { id, name, age, image } = person
 
@@ -18,12 +18,14 @@ const App = () => {
                 <div>
                   <img src={image} alt="name" />
                 </div>
-                <div>
+                <div className='nameAge'>
                   <h3>{name}</h3>
+
+                  <h4>{age} years</h4>
                 </div>
-                <div >
+                {/* <div >
                   <h3>{age} years</h3>
-                </div>
+                </div> */}
               </div>
               
             </div>
